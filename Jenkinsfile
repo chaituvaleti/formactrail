@@ -4,9 +4,10 @@ pipeline {
         checkoutToSubdirectory('source')
     }
     tools {
-        maven 'Maven-3.3.9'
-        jdk 'JDK-8'
+        maven 'Machai_home'
     }
+    options {
+        checkoutToSubdirectory('source')
     stages {
         stage ('Build') {
             agent {
